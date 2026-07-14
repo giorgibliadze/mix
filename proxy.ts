@@ -1,0 +1,3 @@
+import {NextRequest,NextResponse} from "next/server";import {locales} from "@/lib/i18n";
+export function proxy(request:NextRequest){const {pathname}=request.nextUrl;if(pathname==="/")return NextResponse.redirect(new URL("/ka",request.url));const locale=locales.find(x=>pathname===`/${x}`||pathname.startsWith(`/${x}/`))??"ka";const headers=new Headers(request.headers);headers.set("x-site-locale",locale);const response=NextResponse.next({request:{headers}});response.cookies.set("NEXT_LOCALE",locale,{path:"/",maxAge:31536000,sameSite:"lax"});return response}
+export const config={matcher:["/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)"]};

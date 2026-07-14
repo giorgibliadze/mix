@@ -1,0 +1,460 @@
+{
+  "common": {
+    "industries": "Industries",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "start": "Share Your Brief",
+    "home": "Home",
+    "footer": "We build websites and systems that shorten decisions, capture demand and automate routine work.",
+    "contactInfo": "Contact information",
+    "navigation": "Navigation",
+    "language": "Language",
+    "rights": "All rights reserved.",
+    "address": "Tbilisi, Georgia",
+    "work": "Delivery process",
+    "results": "Business outcomes",
+    "without": "Without a proper platform",
+    "solution": "Digital solution",
+    "selectIndustry": "Find your industry",
+    "homeTitle": "Find Your Advantage",
+    "homeText": "Choose your field to see which features can generate more enquiries, sales or bookings for your business.",
+    "quiz": "Quick match",
+    "goal": "Which outcome matters most?",
+    "website": "Do you already have a website?",
+    "recommend": "Recommended for you",
+    "moreSales": "More sales",
+    "booking": "Online booking",
+    "automation": "Automation",
+    "yes": "Yes",
+    "no": "No",
+    "view": "Open this field",
+    "chooseField": "Browse industries",
+    "consultation": "Share your goal",
+    "industryIntro": "Each page maps the sector’s friction points, essential features and clearest route to a measurable result.",
+    "readyTitle": "What should work better?",
+    "readyText": "Tell us where sales, bookings or team workflows slow down. We’ll outline a focused way forward.",
+    "discuss": "Plan a call"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The address is incorrect or the page has moved.",
+    "back": "Return to the home page"
+  },
+  "contact": {
+    "title": "Start With Context",
+    "description": "Briefly describe the goal and what is getting in the way. We’ll respond with a realistic next step for your business."
+  },
+  "about": {
+    "title": "Systems That Work",
+    "description": "Next-Hub Solutions combines business logic, clear design and dependable engineering. We build systems that shorten decisions and remove manual work.",
+    "items": [
+      "Focused business analysis",
+      "Shorter customer journeys",
+      "Integration and measurement"
+    ]
+  },
+  "faqPage": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How is the budget set?",
+        "answer": "Pages, functionality and integrations shape the cost. After a short discovery call, you receive a staged estimate."
+      },
+      {
+        "question": "When will we see a working version?",
+        "answer": "Timing depends on scope. Before work begins, we agree on clear stages and the result you will see at each one."
+      },
+      {
+        "question": "What happens after launch?",
+        "answer": "We monitor performance, resolve issues and use real behaviour data to prioritise the next improvements."
+      }
+    ]
+  },
+  "form": {
+    "name": "Name",
+    "company": "Company",
+    "phone": "Phone",
+    "email": "Email",
+    "industry": "Industry",
+    "service": "Required service",
+    "details": "Project details",
+    "choose": "Choose",
+    "website": "Website",
+    "platform": "Web platform",
+    "ai": "AI integration",
+    "consent": "I agree to the processing of my data to discuss this project.",
+    "required": "Complete the required fields and accept the terms.",
+    "invalid": "Enter a valid email address.",
+    "success": "Thank you. We will contact you shortly.",
+    "submit": "Send enquiry",
+    "loading": "Sending..."
+  },
+  "industries": {
+    "construction": {
+      "nav": "Construction & real estate",
+      "badge": "Digital sales for property developers",
+      "title": "Accelerate Property Sales",
+      "subtitle": "Let buyers compare buildings, floors and available units themselves. Give your sales team a clearer, better-qualified enquiry.",
+      "heroPrimary": "Explore Unit Selection",
+      "heroSecondary": "Plan the Showcase",
+      "cardText": "Buyers find the right unit faster, while sales teams receive better-qualified enquiries.",
+      "problemsTitle": "What Delays Buyers",
+      "problems": [
+        "Unit details live across different channels",
+        "Available properties are hard to find",
+        "Prices and statuses become outdated",
+        "Sales teams repeat the same answers"
+      ],
+      "solutionTitle": "From Choice to Meeting",
+      "features": [
+        "Interactive building and floor selection",
+        "Apartment filters",
+        "Price, area and availability",
+        "Detailed unit pages",
+        "Meeting booking",
+        "CRM integration",
+        "Multilingual presentation"
+      ],
+      "results": [
+        "Fewer repetitive questions",
+        "More specific enquiries",
+        "A shorter sales cycle",
+        "Stronger project credibility"
+      ],
+      "journeyTitle": "Buyer journey",
+      "journey": [
+        "Project",
+        "Building",
+        "Floor",
+        "Unit",
+        "Details",
+        "Meeting"
+      ],
+      "aiTitle": "Less Sales Admin",
+      "ai": [
+        "Automatic lead scoring",
+        "CRM routing",
+        "Instant availability answers"
+      ],
+      "process": [
+        "Strategy",
+        "UX architecture",
+        "Prototype",
+        "Development",
+        "Launch"
+      ],
+      "faq": [
+        {
+          "question": "Can availability update from our CRM?",
+          "answer": "Yes. Unit status and incoming leads can connect directly to your CRM."
+        },
+        {
+          "question": "Can we add a 3D tour?",
+          "answer": "Yes. We can integrate 3D, 360° and video presentations."
+        }
+      ],
+      "finalCta": "Sell With Clarity",
+      "description": "A developer website with unit selection, live availability, meeting booking and CRM connectivity.",
+      "keywords": [
+        "property developer website",
+        "real estate platform",
+        "interactive apartment selector"
+      ]
+    },
+    "tourism": {
+      "nav": "Tourism",
+      "badge": "From inspiration to booking",
+      "title": "Win Direct Bookings",
+      "subtitle": "Let travellers choose a tour, review the full itinerary and pay on your website. Cut the messages between interest and confirmation.",
+      "heroPrimary": "See Booking Flow",
+      "heroSecondary": "Plan Tour Site",
+      "cardText": "Travellers choose an itinerary and complete the booking directly on your website.",
+      "problemsTitle": "Where Bookings Disappear",
+      "problems": [
+        "Tours only appear on social media",
+        "Offers are difficult to compare",
+        "Bookings are handled manually",
+        "International travellers lack clear details"
+      ],
+      "solutionTitle": "From Search to Payment",
+      "features": [
+        "Tour catalogue",
+        "Date and destination selection",
+        "Online booking",
+        "Online payment",
+        "Google Maps",
+        "Multilingual content",
+        "AI trip planner"
+      ],
+      "results": [
+        "More direct bookings",
+        "Fewer manual messages",
+        "Faster online payments",
+        "Clearer offers for global travellers"
+      ],
+      "journeyTitle": "Traveller journey",
+      "journey": [
+        "Dates",
+        "Interests",
+        "Budget",
+        "Tour",
+        "Itinerary",
+        "Payment"
+      ],
+      "aiTitle": "AI trip planner",
+      "ai": [
+        "Destination ideas based on interests",
+        "Budget-based itinerary generation",
+        "Multilingual chatbot"
+      ],
+      "process": [
+        "Destinations",
+        "Booking UX",
+        "Content",
+        "Integrations",
+        "Launch"
+      ],
+      "faq": [
+        {
+          "question": "Can customers pay online?",
+          "answer": "Yes. The platform can connect to local or international payment providers."
+        },
+        {
+          "question": "Does AI create the entire tour?",
+          "answer": "AI suggests itineraries based on your real catalogue and business rules."
+        }
+      ],
+      "finalCta": "Own Every Booking",
+      "description": "A travel website with tours, itineraries, online booking, payments and AI-assisted planning.",
+      "keywords": [
+        "tour operator website",
+        "online tour booking",
+        "travel platform Georgia"
+      ]
+    },
+    "ecommerce": {
+      "nav": "E-commerce",
+      "badge": "An always-on sales channel",
+      "title": "Keep Sales Moving",
+      "subtitle": "Help shoppers find products and finish payment quickly. Manage orders, stock and delivery from one place.",
+      "heroPrimary": "Open Your Store",
+      "heroSecondary": "See Sales Flow",
+      "cardText": "Manage every step from product discovery to delivery in one connected store.",
+      "problemsTitle": "Why Orders Stop",
+      "problems": [
+        "Orders arrive through messages",
+        "Customers cannot see stock",
+        "Processing is manual",
+        "Abandoned carts never return"
+      ],
+      "solutionTitle": "Buy Without Friction",
+      "features": [
+        "Product catalogue",
+        "Filters and search",
+        "Cart and checkout",
+        "Online payment",
+        "Delivery integration",
+        "Customer account",
+        "Sales analytics"
+      ],
+      "results": [
+        "Orders at any hour",
+        "Less manual processing",
+        "More repeat purchases",
+        "Clearly measured sales"
+      ],
+      "journeyTitle": "Fast checkout",
+      "journey": [
+        "Search",
+        "Filter",
+        "Product",
+        "Cart",
+        "Payment",
+        "Status"
+      ],
+      "aiTitle": "Relevant Products Faster",
+      "ai": [
+        "Personalised recommendations",
+        "Related-product suggestions",
+        "Smart search"
+      ],
+      "process": [
+        "Catalogue",
+        "Conversion UX",
+        "Payments",
+        "Logistics",
+        "Optimisation"
+      ],
+      "faq": [
+        {
+          "question": "Can it connect to our stock system?",
+          "answer": "Yes. We can integrate an ERP, warehouse system or another data source."
+        },
+        {
+          "question": "Will mobile checkout be fast?",
+          "answer": "Yes. Checkout is designed around small screens and minimal steps from the start."
+        }
+      ],
+      "finalCta": "Stop Losing Orders",
+      "description": "An online store with fast search, simple payment, delivery integration and actionable sales analytics.",
+      "keywords": [
+        "online store development",
+        "ecommerce Georgia",
+        "online sales"
+      ]
+    },
+    "healthcare": {
+      "nav": "Clinics & healthcare",
+      "badge": "A trusted patient experience",
+      "title": "Book Without Calls",
+      "subtitle": "Let patients choose a service, doctor and available time online. Give administrators fewer calls and a schedule they can manage.",
+      "heroPrimary": "See Booking Steps",
+      "heroSecondary": "Plan Clinic Booking",
+      "cardText": "Patients choose a doctor and time themselves, reducing calls for the clinic team.",
+      "problemsTitle": "What Overloads Reception",
+      "problems": [
+        "Doctor schedules are not visible online",
+        "Patients struggle to choose a specialist",
+        "Administrators handle too many calls",
+        "Reminders are sent manually"
+      ],
+      "solutionTitle": "Booking in Minutes",
+      "features": [
+        "Doctor profiles",
+        "Service pages",
+        "Online appointment booking",
+        "Calendar",
+        "Branch selection",
+        "Automated reminders",
+        "Administrative AI assistant"
+      ],
+      "results": [
+        "Fewer phone calls",
+        "Fewer missed appointments",
+        "Clearer doctor selection",
+        "A manageable admin workload"
+      ],
+      "journeyTitle": "Patient journey",
+      "journey": [
+        "Service",
+        "Doctor",
+        "Time",
+        "Booking",
+        "Confirmation",
+        "Reminder"
+      ],
+      "aiTitle": "AI for Reception",
+      "ai": [
+        "Finding the right service or specialist",
+        "Answering FAQs",
+        "Booking help without diagnosis"
+      ],
+      "process": [
+        "Service audit",
+        "Patient UX",
+        "Calendar",
+        "Integration",
+        "Responsible launch"
+      ],
+      "faq": [
+        {
+          "question": "Does AI diagnose patients?",
+          "answer": "No. AI is only used for administrative assistance and never replaces a doctor."
+        },
+        {
+          "question": "Can the system send reminders?",
+          "answer": "Yes. It can send automatic SMS or email appointment reminders."
+        }
+      ],
+      "finalCta": "Reduce Call Volume",
+      "description": "A clinic website with doctor profiles, live schedules, online booking and responsible reminders.",
+      "keywords": [
+        "clinic website",
+        "online doctor booking",
+        "healthcare website"
+      ]
+    },
+    "ai-automation": {
+      "nav": "AI & business automation",
+      "badge": "Connected workflows",
+      "title": "Automate Daily Work",
+      "subtitle": "Connect enquiries, CRM, email and reporting in one flow. Bring people in only where judgement is needed.",
+      "heroPrimary": "Find Automation Wins",
+      "heroSecondary": "Review Your Workflows",
+      "cardText": "Routine tasks run automatically, leaving the team focused on decisions that need people.",
+      "problemsTitle": "Where Team Time Goes",
+      "problems": [
+        "Requests get lost across channels",
+        "Leads are routed too late",
+        "Reports are prepared manually",
+        "Internal systems remain disconnected"
+      ],
+      "solutionTitle": "One Connected Workflow",
+      "features": [
+        "AI chatbot",
+        "Lead capture",
+        "Request classification",
+        "CRM integration",
+        "Automated email",
+        "Document processing",
+        "Report generation",
+        "API integrations"
+      ],
+      "results": [
+        "Faster enquiry responses",
+        "Less repetitive work",
+        "No forgotten leads",
+        "Cleaner decision-ready data"
+      ],
+      "journeyTitle": "Automation flow",
+      "journey": [
+        "Request",
+        "Understand",
+        "Classify",
+        "CRM",
+        "Manager",
+        "Report"
+      ],
+      "aiTitle": "Automation in Practice",
+      "ai": [
+        "Sales: question → lead → CRM",
+        "Support: knowledge base → response → human",
+        "Reports: data → analysis → delivery"
+      ],
+      "process": [
+        "Process audit",
+        "ROI priorities",
+        "Prototype",
+        "Integration",
+        "Monitoring"
+      ],
+      "faq": [
+        {
+          "question": "What should we automate first?",
+          "answer": "Start with a frequent, rules-based and measurable process."
+        },
+        {
+          "question": "Can this integrate with our CRM?",
+          "answer": "Yes. We connect to existing systems through secure APIs."
+        }
+      ],
+      "finalCta": "Give Time Back",
+      "description": "AI assistants, CRM connections and automated workflows for sales, support and reporting.",
+      "keywords": [
+        "AI integration",
+        "business automation",
+        "CRM automation"
+      ]
+    }
+  },
+  "visual": {
+    "constructionLabel": "Residence 01",
+    "floors": "12 floors · 48 units",
+    "tourismMap": "Route map",
+    "product": "Product",
+    "specialist": "Specialist",
+    "available": "Available today",
+    "aiCore": "AI core"
+  }
+}

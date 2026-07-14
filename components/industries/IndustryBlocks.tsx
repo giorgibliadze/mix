@@ -1,0 +1,20 @@
+import {ArrowRight,Check,Sparkles} from "lucide-react";
+import {getDictionary,type IndustryCopy,type IndustrySlug,type Locale} from "@/lib/i18n";
+import {LocalizedLink} from "../LocalizedLink";
+import {FaqAccordion} from "../FaqAccordion";
+
+export function Problems({d,className=""}:{d:IndustryCopy;className?:string}){return <section className={`industry-section ${className}`}><p className="eyebrow">{d.problemsTitle}</p><div className="mt-7 grid gap-3 sm:grid-cols-2">{d.problems.map((item,index)=><article key={item} className="industry-card"><span className="text-xs opacity-50">0{index+1}</span><p className="mt-3 text-lg">{item}</p></article>)}</div></section>}
+
+export function Features({d,className=""}:{d:IndustryCopy;className?:string}){return <section className={`industry-section ${className}`}><p className="eyebrow">{d.solutionTitle}</p><div className="mt-7 grid gap-3 md:grid-cols-2 lg:grid-cols-3">{d.features.map(item=><article key={item} className="industry-card flex gap-3"><Check className="mt-0.5 shrink-0 text-[var(--theme)]" size={18}/><span>{item}</span></article>)}</div></section>}
+
+export function Results({d,label}:{d:IndustryCopy;label:string}){return <section className="industry-section"><p className="eyebrow">{label}</p><div className="mt-7 grid gap-4 md:grid-cols-3">{d.results.map((item,index)=><div key={item} className="result-card"><strong className="text-4xl">{String(index+1).padStart(2,"0")}</strong><p className="mt-3">{item}</p></div>)}</div></section>}
+
+export function Journey({d,variant="line"}:{d:IndustryCopy;variant?:"line"|"route"|"steps"}){return <section className={`industry-section journey-${variant}`}><p className="eyebrow">{d.journeyTitle}</p><div className="mt-8 flex flex-wrap items-center gap-2">{d.journey.map((item,index)=><div className="contents" key={item}><span className="journey-step"><b>{index+1}</b>{item}</span>{index<d.journey.length-1&&<ArrowRight className="text-[var(--theme)]" size={18}/>}</div>)}</div></section>}
+
+export function Ai({d}:{d:IndustryCopy}){return <section className="industry-section ai-panel"><p className="eyebrow">{d.aiTitle}</p><div className="mt-7 grid gap-4 md:grid-cols-3">{d.ai.map(item=><article key={item} className="industry-card"><Sparkles className="text-[var(--theme)]"/><p className="mt-4 leading-7">{item}</p></article>)}</div></section>}
+
+export function Process({d,label}:{d:IndustryCopy;label:string}){return <section className="industry-section"><p className="eyebrow">{label}</p><ol className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">{d.process.map((item,index)=><li key={item} className="industry-card"><span className="text-[var(--theme)]">{index+1}.</span> {item}</li>)}</ol></section>}
+
+export function FAQ({d}:{d:IndustryCopy}){return <section className="industry-section"><p className="eyebrow">FAQ</p><div className="mt-7"><FaqAccordion items={d.faq}/></div></section>}
+
+export function FinalCTA({d,locale,slug}:{d:IndustryCopy;locale:Locale;slug:IndustrySlug}){const common=getDictionary(locale).common;return <section className="industry-section pb-24"><div className="rounded-[2rem] border border-[var(--theme)]/30 bg-white/5 p-8 text-center sm:p-12"><p className="eyebrow">{d.finalCta}</p><h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold sm:text-5xl">{common.readyTitle}</h2><p className="mx-auto mt-5 max-w-2xl text-slate-400">{common.readyText}</p><div className="mt-8 flex flex-wrap justify-center gap-3"><LocalizedLink locale={locale} href={`/contact?industry=${slug}`} className="inline-flex min-h-12 items-center gap-2 rounded-full bg-[#F13024] px-6 font-semibold">{common.contact}<ArrowRight size={18}/></LocalizedLink><LocalizedLink locale={locale} href={`/contact?industry=${slug}`} className="inline-flex min-h-12 items-center rounded-full border border-white/15 px-6 font-semibold">{d.heroSecondary}</LocalizedLink></div><p className="mt-6 text-sm text-slate-400">555 137 003 · infonexthubsolutions@gmail.com · www.next-hub.pro</p></div></section>}
