@@ -1,0 +1,11 @@
+import Image from "next/image";
+import {ArrowDownRight,Building2} from "lucide-react";
+import type {Dictionary,IndustryCopy,Locale} from "@/lib/i18n";
+import {LocalizedLink} from "@/components/LocalizedLink";
+
+export function ConstructionHero({d,visual,locale}:{d:IndustryCopy;visual:Dictionary["constructionVisual"];locale:Locale}){
+ return <section className="construction-hero hero-shell grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center xl:gap-16">
+  <div className="relative z-10 max-w-xl"><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#construction-selector">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=construction">{d.heroSecondary}</LocalizedLink></div><div className="mt-9 flex items-center gap-4 border-t border-white/10 pt-5 text-sm text-slate-400"><Building2 size={18} className="text-[#d4aa70]"/><span>{visual.heroCardMeta}</span></div></div>
+  <div className="relative"><div aria-hidden="true" className="construction-blueprint absolute -inset-5 rounded-[2.5rem]"/><div className="construction-photo group relative aspect-[4/3] overflow-hidden rounded-[1.75rem] border border-white/15 bg-[#17191d] shadow-[0_35px_100px_rgba(0,0,0,.4)] lg:aspect-[5/4]"><Image src="/images/industries/construction/construction-hero-modern-villa.webp" alt={visual.heroAlt} fill priority sizes="(max-width: 1023px) calc(100vw - 2rem), 55vw" className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.015]"/><div className="absolute inset-0 bg-linear-to-t from-[#080b11]/70 via-transparent to-transparent"/><div className="absolute right-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md">01 / 05</div><div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-4 rounded-2xl border border-white/15 bg-[#101216]/78 p-4 text-white backdrop-blur-xl sm:bottom-6 sm:left-6 sm:right-auto sm:w-[19rem]"><div><p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#d4aa70]">{visual.heroCardLabel}</p><p className="mt-1 font-semibold">{visual.heroCardTitle}</p></div><ArrowDownRight className="shrink-0 text-[#d4aa70]" size={20}/></div></div></div>
+ </section>
+}

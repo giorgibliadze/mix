@@ -1,2 +1,27 @@
-import Image from "next/image";import {Building2,Layers3} from "lucide-react";import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";import {LocalizedLink} from "../LocalizedLink";import {Problems,Features,Results,Journey,Ai,Process,FAQ,FinalCTA} from "./IndustryBlocks";
-export function ConstructionPage({d,locale}:{d:IndustryCopy;locale:Locale}){const dictionary=getDictionary(locale);return <div className="industry construction"><section className="hero-shell grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-center"><div><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#capabilities">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=construction">{d.heroSecondary}</LocalizedLink></div></div><div className="blueprint"><Image src="/images/construction-hero.svg" alt="" width={800} height={280} className="mb-4 h-28 w-full rounded-xl object-cover opacity-50" priority/><div className="building"><Building2 size={52}/><p>{dictionary.visual.constructionLabel}</p><div className="grid grid-cols-4 gap-2">{Array.from({length:12},(_,index)=><span key={index} className={index%4===0?"sold":""}>{index+1}</span>)}</div><p className="flex items-center gap-2 text-sm"><Layers3 size={16}/>{dictionary.visual.floors}</p></div></div></section><Problems d={d}/><div id="capabilities"><Features d={d}/></div><Journey d={d}/><Results d={d} label={dictionary.common.results}/><Ai d={d}/><Process d={d} label={dictionary.common.work}/><FAQ d={d}/><FinalCTA d={d} locale={locale} slug="construction"/></div>}
+import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";
+import {Problems,Features,Results,Journey,Ai,Process,FAQ,FinalCTA} from "./IndustryBlocks";
+import {ConstructionHero} from "./construction/ConstructionHero";
+import {PropertyGallery} from "./construction/PropertyGallery";
+import {BuildingSelectorPreview} from "./construction/BuildingSelectorPreview";
+import {PremiumProjectShowcase} from "./construction/PremiumProjectShowcase";
+import {MobileExperiencePreview} from "./construction/MobileExperiencePreview";
+
+export function ConstructionPage({d,locale}:{d:IndustryCopy;locale:Locale}){
+ const dictionary=getDictionary(locale);
+ const visual=dictionary.constructionVisual;
+ return <div className="industry construction">
+  <ConstructionHero d={d} visual={visual} locale={locale}/>
+  <Problems d={d}/>
+  <PropertyGallery d={d} visual={visual}/>
+  <Features d={d}/>
+  <BuildingSelectorPreview visual={visual}/>
+  <Journey d={d}/>
+  <MobileExperiencePreview visual={visual}/>
+  <Results d={d} label={dictionary.common.results}/>
+  <PremiumProjectShowcase visual={visual}/>
+  <Ai d={d}/>
+  <Process d={d} label={dictionary.common.work}/>
+  <FAQ d={d}/>
+  <FinalCTA d={d} locale={locale} slug="construction"/>
+ </div>
+}

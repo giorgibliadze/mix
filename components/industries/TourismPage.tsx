@@ -1,2 +1,14 @@
-import {MapPin,Plane} from "lucide-react";import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";import {LocalizedLink} from "../LocalizedLink";import {Problems,Features,Results,Journey,Ai,Process,FAQ,FinalCTA} from "./IndustryBlocks";
-export function TourismPage({d,locale}:{d:IndustryCopy;locale:Locale}){const dictionary=getDictionary(locale);return <div className="industry tourism"><section className="hero-shell"><div className="travel-visual" aria-label={dictionary.visual.tourismMap}><div className="route-line"/><span className="pin a"><MapPin/></span><span className="pin b"><Plane/></span></div><div className="relative max-w-3xl"><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#trips">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=tourism">{d.heroSecondary}</LocalizedLink></div></div></section><Journey d={d} variant="route"/><Problems d={d}/><Ai d={d}/><div id="trips"><Features d={d}/></div><Results d={d} label={dictionary.common.results}/><Process d={d} label={dictionary.common.work}/><FAQ d={d}/><FinalCTA d={d} locale={locale} slug="tourism"/></div>}
+import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";
+import {FAQ,Problems,Results} from "./IndustryBlocks";
+import {AiTripPlanner} from "./tourism/AiTripPlanner";
+import {BookingExperience} from "./tourism/BookingExperience";
+import {BookingJourney} from "./tourism/BookingJourney";
+import {DestinationShowcase} from "./tourism/DestinationShowcase";
+import {TourismFinalCTA} from "./tourism/TourismFinalCTA";
+import {TourismHero} from "./tourism/TourismHero";
+
+export function TourismPage({d,locale}:{d:IndustryCopy;locale:Locale}){
+ const dictionary=getDictionary(locale);
+ const visual=dictionary.tourismVisual;
+ return <div className="industry tourism"><TourismHero d={d} visual={visual} locale={locale}/><Problems d={d} className="tourism-problems"/><DestinationShowcase visual={visual}/><BookingJourney visual={visual}/><AiTripPlanner visual={visual}/><BookingExperience visual={visual}/><Results d={d} label={dictionary.common.results}/><FAQ d={d}/><TourismFinalCTA d={d} visual={visual} locale={locale}/></div>;
+}
