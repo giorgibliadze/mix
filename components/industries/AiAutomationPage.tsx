@@ -1,2 +1,16 @@
-import {Bot,Database,Mail,Workflow} from "lucide-react";import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";import {LocalizedLink} from "../LocalizedLink";import {Problems,Features,Results,Journey,Ai,Process,FAQ,FinalCTA} from "./IndustryBlocks";
-export function AiAutomationPage({d,locale}:{d:IndustryCopy;locale:Locale}){const dictionary=getDictionary(locale);const nodes=[Bot,Database,Workflow,Mail];return <div className="industry ai-automation"><section className="hero-shell grid gap-10 lg:grid-cols-2 lg:items-center"><div><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#workflows">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=ai-automation">{d.heroSecondary}</LocalizedLink></div></div><div className="node-map">{nodes.map((Icon,index)=><div key={index} className={`node n${index}`}><Icon/></div>)}<div className="core"><Bot size={42}/><span>{dictionary.visual.aiCore}</span></div></div></section><Ai d={d}/><Journey d={d} variant="steps"/><div id="workflows"><Features d={d}/></div><Results d={d} label={dictionary.common.results}/><Problems d={d}/><Process d={d} label={dictionary.common.work}/><FAQ d={d}/><FinalCTA d={d} locale={locale} slug="ai-automation"/></div>}
+import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";
+import {FAQ,Problems,Results} from "./IndustryBlocks";
+import {AiAssistants} from "./ai-automation/AiAssistants";
+import {AiAutomationFinalCTA} from "./ai-automation/AiAutomationFinalCTA";
+import {AiAutomationHero} from "./ai-automation/AiAutomationHero";
+import {AutomationInsights} from "./ai-automation/AutomationInsights";
+import {AutomationProcess} from "./ai-automation/AutomationProcess";
+import {DocumentProcessing} from "./ai-automation/DocumentProcessing";
+import {IntegrationNetwork} from "./ai-automation/IntegrationNetwork";
+import {WorkflowPreview} from "./ai-automation/WorkflowPreview";
+
+export function AiAutomationPage({d,locale}:{d:IndustryCopy;locale:Locale}){
+ const dictionary=getDictionary(locale);
+ const visual=dictionary.aiAutomationVisual;
+ return <div className="industry ai-automation"><AiAutomationHero d={d} visual={visual} locale={locale}/><Problems d={d} className="ai-automation-problems"/><WorkflowPreview visual={visual}/><AiAssistants visual={visual}/><IntegrationNetwork visual={visual}/><DocumentProcessing visual={visual}/><AutomationInsights visual={visual}/><Results d={d} label={dictionary.common.results}/><AutomationProcess visual={visual}/><FAQ d={d}/><AiAutomationFinalCTA d={d} visual={visual} locale={locale}/></div>;
+}

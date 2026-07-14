@@ -1,0 +1,8 @@
+import Image from "next/image";
+import {Bot,Sparkles} from "lucide-react";
+import type {Dictionary} from "@/lib/i18n";
+import {EcommerceReveal} from "./EcommerceReveal";
+
+export function EcommerceAiSection({visual}:{visual:Dictionary["ecommerceVisual"]}){
+ return <EcommerceReveal className="ecommerce-section"><div className="overflow-hidden rounded-[2rem] border border-white/12 bg-[#f3f0fa] text-[#181629]"><div className="grid lg:grid-cols-2"><div className="relative min-h-[27rem] overflow-hidden"><Image src="/images/industries/ecommerce/ai-product-recommendations.jpeg" alt={visual.aiAlt} fill sizes="(max-width: 1023px) calc(100vw - 2rem), 50vw" className="object-cover object-center"/><div className="absolute inset-0 bg-linear-to-t from-[#161126]/65 via-transparent to-transparent"/><div className="absolute bottom-5 left-5 right-5 flex items-center gap-3 rounded-xl border border-white/15 bg-[#161126]/55 p-4 text-white backdrop-blur-md"><Bot className="text-[#ad9fff]"/><div><p className="text-xs text-white/60">{visual.aiDemoLabel}</p><p className="font-semibold">{visual.aiDemoState}</p></div></div></div><div className="p-6 sm:p-10 lg:p-12"><p className="text-xs font-bold uppercase tracking-[.18em] text-[#6653da]">{visual.aiEyebrow}</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">{visual.aiTitle}</h2><p className="mt-5 leading-8 text-slate-600">{visual.aiText}</p><div className="mt-8 grid gap-3 sm:grid-cols-2">{visual.aiItems.map(item=><div key={item} className="flex gap-3 rounded-xl border border-black/8 bg-white/70 p-4 text-sm"><Sparkles size={17} className="shrink-0 text-[#705de2]"/>{item}</div>)}</div><p className="mt-6 text-sm font-semibold text-[#6653da]">{visual.aiOutcome}</p></div></div></div></EcommerceReveal>;
+}

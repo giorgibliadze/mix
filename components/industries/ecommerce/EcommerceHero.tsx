@@ -1,0 +1,13 @@
+import Image from "next/image";
+import {BarChart3,Check,PackageCheck,ShoppingBag} from "lucide-react";
+import type {Dictionary,IndustryCopy,Locale} from "@/lib/i18n";
+import {LocalizedLink} from "@/components/LocalizedLink";
+
+export function EcommerceHero({d,visual,locale}:{d:IndustryCopy;visual:Dictionary["ecommerceVisual"];locale:Locale}){
+ return <section className="ecommerce-hero hero-shell grid gap-11 lg:grid-cols-[.86fr_1.14fr] lg:items-center xl:gap-16">
+  <div className="relative z-10 max-w-xl"><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#ecommerce-discovery">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=ecommerce">{d.heroSecondary}</LocalizedLink></div><div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-slate-400">{visual.heroTrust.map(item=><span key={item} className="flex items-center gap-2"><Check size={14} className="text-[#7c6df2]"/>{item}</span>)}</div></div>
+  <div className="relative pb-12 sm:pr-6"><div aria-hidden="true" className="ecommerce-grid absolute -inset-6 rounded-[2.5rem]"/><div className="group relative aspect-[16/11] overflow-hidden rounded-[2rem] border border-white/15 bg-[#171529] shadow-[0_38px_100px_rgba(0,0,0,.4)]"><Image src="/images/industries/ecommerce/ecommerce-storefront-hero.jpeg" alt={visual.heroAlt} fill priority sizes="(max-width: 1023px) calc(100vw - 2rem), 56vw" className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.015]"/><div className="absolute inset-0 bg-linear-to-t from-[#0c0a19]/75 via-transparent to-transparent"/><div className="absolute left-4 top-4 rounded-full border border-white/20 bg-black/35 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.15em] backdrop-blur-md">{visual.demoState}</div></div>
+   <div className="ecommerce-cart absolute -bottom-1 left-3 right-0 rounded-2xl border border-white/15 bg-[#f7f5f1]/96 p-4 text-[#19172a] shadow-2xl backdrop-blur-xl sm:left-auto sm:w-[25rem]"><div className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#17152b] text-white"><ShoppingBag size={19}/></span><div className="min-w-0 flex-1"><p className="text-xs text-slate-500">{visual.cartLabel}</p><p className="truncate font-semibold">{visual.cartProduct}</p></div><b>{visual.cartPrice}</b></div><div className="mt-4 grid grid-cols-2 gap-2 text-xs"><span><PackageCheck size={15}/>{visual.orderStatus}</span><span><BarChart3 size={15}/>{visual.salesMetric}</span></div></div>
+  </div>
+ </section>;
+}

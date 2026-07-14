@@ -71,14 +71,48 @@ body { overflow-x: hidden; }
 .tourism .result-card { background:linear-gradient(145deg,rgba(21,126,120,.35),rgba(7,34,45,.9)); }
 .tourism .hero-shell h1 { font-size:clamp(3.875rem,5vw,4.75rem); }
 @keyframes tourism-route { to { stroke-dashoffset:-170; } }
-.ecommerce{--theme:#ff4d8d;background:radial-gradient(circle at 85% 10%,#6d1749 0,transparent 28%),#0b0a17}.product-stack{display:grid;gap:1rem}.product{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:1rem;padding:1.2rem;border-radius:1.2rem;background:white;color:#17111f;box-shadow:14px 14px 0 #7c3aed}.product:nth-child(2){transform:translateX(2rem)}.product button{border-radius:50%;background:#17111f;color:#fff;padding:.5rem}
-.healthcare{--theme:#38bfa7;background:#f2fbfa;color:#132a35}.healthcare .hero-copy,.healthcare .eyebrow{color:#257d72}.healthcare .industry-card{border-color:#bddbd6;background:white;color:#27414b}.healthcare .result-card{color:#16343b}.healthcare footer,.healthcare header{color:white}.appointment{padding:1.5rem;border-radius:2rem;background:white;box-shadow:0 30px 80px #1d81742b}.doctor{display:flex;align-items:center;gap:1rem;border-bottom:1px solid #d6eae7;padding:1rem}.doctor div{flex:1}.doctor p{font-size:.8rem;color:#64748b}.calendar{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem;padding:1rem}.calendar svg{grid-column:1/-1}.calendar span{padding:.8rem;border-radius:.8rem;background:#eaf8f5;text-align:center}
-.ai-automation{--theme:#8b5cf6;background:radial-gradient(circle at 75% 12%,#5126a955,transparent 30%),#050611}.node-map{position:relative;min-height:28rem;border:1px solid #8b5cf655;border-radius:50%;background:radial-gradient(circle,#8b5cf633,transparent 55%)}.core,.node{position:absolute;display:flex;align-items:center;justify-content:center;border:1px solid #a78bfa;background:#11102a;box-shadow:0 0 35px #8b5cf688}.core{inset:36%;flex-direction:column;border-radius:50%}.node{width:4rem;height:4rem;border-radius:1rem}.n0{left:10%;top:42%}.n1{right:10%;top:42%}.n2{left:44%;top:8%}.n3{left:44%;bottom:8%}
+.ecommerce { --theme:#F13024; background:radial-gradient(circle at 83% 4%,rgba(113,91,228,.23),transparent 27rem),linear-gradient(180deg,#0d0b19 0%,#111020 42rem,#090b14 100%); }
+.ecommerce-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); scroll-margin-top:5rem; }
+.ecommerce-grid { border:1px solid rgba(139,124,241,.14); background-image:linear-gradient(rgba(139,124,241,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(139,124,241,.08) 1px,transparent 1px); background-size:32px 32px; transform:rotate(-1.25deg); }
+.ecommerce-cart span { display:flex; min-height:2.55rem; align-items:center; gap:.5rem; border-radius:.75rem; background:#ebe8f4; padding:.65rem .7rem; }
+.ecommerce-journey li:not(:last-child)::after { position:absolute; z-index:2; top:1.55rem; right:-.7rem; width:1rem; border-top:1px dashed rgba(142,128,255,.5); content:""; }
+.ecommerce-problems .industry-card { border-color:rgba(126,108,238,.18); background:rgba(20,18,37,.78); }
+.ecommerce .result-card { background:linear-gradient(145deg,rgba(105,86,221,.32),rgba(15,14,28,.92)); }
+.ecommerce .hero-shell h1 { font-size:clamp(3.875rem,5vw,4.75rem); }
+.healthcare { --theme:#168474; background:radial-gradient(circle at 84% 4%,rgba(71,181,164,.16),transparent 28rem),linear-gradient(180deg,#f7fbfa 0%,#eef7f5 44rem,#f7faf9 100%); color:#17383e; }
+.healthcare-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); scroll-margin-top:5rem; }
+.healthcare-grid { border:1px solid rgba(35,129,116,.13); background-image:linear-gradient(rgba(35,129,116,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(35,129,116,.07) 1px,transparent 1px); background-size:32px 32px; transform:rotate(1.2deg); }
+.healthcare-appointment span,.healthcare-appointment button { display:flex; min-height:2.55rem; align-items:center; gap:.45rem; border-radius:.75rem; background:#edf6f4; padding:.65rem .7rem; }
+.healthcare-appointment button { justify-content:center; border:0; background:#F13024; color:white; font:inherit; font-weight:700; }
+.healthcare-journey li:not(:last-child)::after { position:absolute; z-index:2; top:1.55rem; right:-.7rem; width:1rem; border-top:1px dashed rgba(22,132,116,.42); content:""; }
+.healthcare .hero-copy,.healthcare .eyebrow { color:#28776d; }
+.healthcare-problems .industry-card { border-color:rgba(23,63,70,.1); background:white; color:#294a50; box-shadow:0 12px 35px rgba(25,73,78,.05); }
+.healthcare .result-card { color:#17383e; background:linear-gradient(145deg,#dcefeb,#f8fbfa); border:1px solid rgba(23,63,70,.08); }
+.healthcare .industry-section .space-y-3>div { border-color:rgba(23,63,70,.1); background:white; }
+.healthcare .industry-section .space-y-3 button span { color:#17383e; }
+.healthcare .industry-section .space-y-3 p { color:#5c757a; }
+.healthcare .hero-shell h1 { font-size:clamp(3.875rem,5vw,4.625rem); }
+.ai-automation { --theme:#F13024; background:radial-gradient(circle at 82% 4%,rgba(76,93,211,.26),transparent 29rem),linear-gradient(180deg,#050917 0%,#081126 44rem,#050a16 100%); }
+.ai-automation-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); scroll-margin-top:5rem; }
+.ai-automation-grid { border:1px solid rgba(96,124,231,.16); background-image:linear-gradient(rgba(96,124,231,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(96,124,231,.08) 1px,transparent 1px); background-size:31px 31px; transform:rotate(-1.25deg); }
+.ai-automation-panel span { display:flex; min-height:2.4rem; flex:1; align-items:center; justify-content:center; gap:.35rem; border-radius:.7rem; border:1px solid rgba(255,255,255,.09); background:rgba(255,255,255,.05); padding:.55rem .35rem; text-align:center; }
+.ai-workflow li:not(:last-child)::after { position:absolute; z-index:2; top:1.55rem; right:-.7rem; width:1rem; border-top:1px dashed rgba(99,216,231,.45); content:""; }
+.ai-integration-network::before,.ai-integration-network::after { position:absolute; inset:20%; border:1px dashed rgba(99,216,231,.15); border-radius:50%; content:""; }
+.ai-integration-network::after { inset:35%; border-color:rgba(119,107,240,.23); }
+.ai-automation-problems .industry-card { border-color:rgba(104,111,226,.17); background:rgba(12,20,42,.8); }
+.ai-automation .result-card { background:linear-gradient(145deg,rgba(88,82,203,.34),rgba(8,16,34,.94)); }
+.ai-automation .hero-shell h1 { font-size:clamp(3.875rem,5vw,4.75rem); }
 @media(max-width:1023px){.home-hero h1,.hero-shell h1{font-size:clamp(3.5rem,7vw,4.25rem);max-width:15ch}.hero-shell{min-height:auto;padding-block:4.5rem}}
-@media(max-width:639px){.home-hero{padding:4.25rem 1rem 3.5rem}.home-hero h1,.hero-shell h1{font-size:clamp(2.625rem,12vw,3.25rem);line-height:1.02;max-width:14ch}.hero-copy{margin-top:1rem;font-size:1rem;line-height:1.6}.home-actions,.hero-actions{margin-top:1.5rem;flex-direction:column;align-items:stretch}.home-actions a,.hero-actions a{width:100%;justify-content:center}.product:nth-child(2){transform:none}.hero-shell{min-height:auto;padding-block:3.75rem}.node-map{min-height:19rem}.journey-step{font-size:.85rem}.industry-section{padding-block:3.5rem}}
+@media(max-width:639px){.home-hero{padding:4.25rem 1rem 3.5rem}.home-hero h1,.hero-shell h1{font-size:clamp(2.625rem,12vw,3.25rem);line-height:1.02;max-width:14ch}.hero-copy{margin-top:1rem;font-size:1rem;line-height:1.6}.home-actions,.hero-actions{margin-top:1.5rem;flex-direction:column;align-items:stretch}.home-actions a,.hero-actions a{width:100%;justify-content:center}.hero-shell{min-height:auto;padding-block:3.75rem}.node-map{min-height:19rem}.journey-step{font-size:.85rem}.industry-section{padding-block:3.5rem}}
 
 @media(max-width:1023px){.tourism .hero-shell h1{font-size:clamp(3.25rem,7vw,3.875rem)}.tourism-section{padding-block:4.5rem}.tourism-journey li::after{display:none}}
 @media(max-width:639px){.tourism .hero-shell h1{font-size:clamp(2.5rem,12vw,3rem)}.tourism-section{padding-block:3.5rem}.tourism-map-grid{inset:-.75rem}.tourism-planner{max-width:calc(100% - .75rem)}.tourism-ai{border-radius:1.5rem}}
+@media(max-width:1023px){.ecommerce .hero-shell h1{font-size:clamp(3.25rem,7vw,3.875rem)}.ecommerce-section{padding-block:4.5rem}.ecommerce-journey li::after{display:none}}
+@media(max-width:639px){.ecommerce .hero-shell h1{font-size:clamp(2.5rem,12vw,3rem)}.ecommerce-section{padding-block:3.5rem}.ecommerce-grid{inset:-.75rem}.ecommerce-cart{max-width:calc(100% - .75rem)}}
+@media(max-width:1023px){.healthcare .hero-shell h1{font-size:clamp(3.25rem,7vw,3.875rem)}.healthcare-section{padding-block:4.5rem}.healthcare-journey li::after{display:none}}
+@media(max-width:639px){.healthcare .hero-shell h1{font-size:clamp(2.5rem,12vw,3rem)}.healthcare-section{padding-block:3.5rem}.healthcare-grid{inset:-.75rem}.healthcare-appointment{max-width:calc(100% - .75rem)}}
+@media(max-width:1023px){.ai-automation .hero-shell h1{font-size:clamp(3.25rem,7vw,3.875rem)}.ai-automation-section{padding-block:4.5rem}.ai-workflow li::after{display:none}}
+@media(max-width:639px){.ai-automation .hero-shell h1{font-size:clamp(2.5rem,12vw,3rem)}.ai-automation-section{padding-block:3.5rem}.ai-automation-grid{inset:-.75rem}.ai-automation-panel{max-width:calc(100% - .75rem)}.ai-integration-network::before,.ai-integration-network::after{display:none}}
 
 .construction { background: radial-gradient(circle at 82% 5%,rgba(206,164,104,.12),transparent 24rem),linear-gradient(180deg,#0d1219 0%,#121820 38rem,#0b1017 100%); }
 .construction-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); }

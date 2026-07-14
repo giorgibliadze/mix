@@ -1,0 +1,8 @@
+import {CheckCircle2,FileCheck2,FileUp,ScanText,Tags,UserRoundCheck} from "lucide-react";
+import type {Dictionary} from "@/lib/i18n";
+import {AiAutomationReveal} from "./AiAutomationReveal";
+
+const icons=[FileUp,ScanText,Tags,FileCheck2,UserRoundCheck,CheckCircle2];
+export function DocumentProcessing({visual}:{visual:Dictionary["aiAutomationVisual"]}){
+ return <AiAutomationReveal className="ai-automation-section"><div className="overflow-hidden rounded-[2rem] border border-white/12 bg-[#f1f2f6] text-[#151b30]"><div className="grid lg:grid-cols-[.82fr_1.18fr]"><div className="p-6 sm:p-10 lg:p-12"><p className="text-xs font-bold uppercase tracking-[.17em] text-[#6557d8]">{visual.documentsEyebrow}</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">{visual.documentsTitle}</h2><p className="mt-5 leading-8 text-slate-600">{visual.documentsText}</p><div className="mt-7 flex flex-wrap gap-2">{visual.documentTypes.map(item=><span key={item} className="rounded-full border border-black/10 bg-white px-3 py-2 text-xs font-semibold">{item}</span>)}</div><p className="mt-6 rounded-xl border border-[#db8a65]/20 bg-[#fff1ea] p-4 text-sm font-semibold text-[#8c4932]">{visual.documentsBoundary}</p></div><ol className="grid gap-3 bg-[#e7e9f0] p-5 sm:grid-cols-2 sm:p-8 lg:p-10">{visual.documentSteps.map((item,index)=>{const Icon=icons[index];return <li key={item} className="rounded-xl border border-black/8 bg-white p-4"><div className="flex items-center justify-between text-[#6557d8]"><Icon size={19}/><span className="text-[10px]">0{index+1}</span></div><p className="mt-6 text-sm font-semibold">{item}</p></li>})}</ol></div></div></AiAutomationReveal>;
+}

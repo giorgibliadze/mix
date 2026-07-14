@@ -1,2 +1,16 @@
-import {ShoppingBag,Plus} from "lucide-react";import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";import {LocalizedLink} from "../LocalizedLink";import {Problems,Features,Results,Journey,Ai,Process,FAQ,FinalCTA} from "./IndustryBlocks";
-export function EcommercePage({d,locale}:{d:IndustryCopy;locale:Locale}){const dictionary=getDictionary(locale);return <div className="industry ecommerce"><section className="hero-shell grid gap-8 lg:grid-cols-2 lg:items-center"><div><p className="eyebrow">{d.badge}</p><h1>{d.title}</h1><p className="hero-copy">{d.subtitle}</p><div className="hero-actions"><a href="#shop">{d.heroPrimary}</a><LocalizedLink locale={locale} href="/contact?industry=ecommerce">{d.heroSecondary}</LocalizedLink></div></div><div className="product-stack">{["01","02","03"].map((number,index)=><div key={number} className="product"><ShoppingBag/><strong>{dictionary.visual.product} {number}</strong><span>$ {49+index*20}</span><button aria-label={dictionary.visual.product}><Plus/></button></div>)}</div></section><Results d={d} label={dictionary.common.results}/><div id="shop"><Features d={d}/></div><Journey d={d} variant="steps"/><Problems d={d}/><Ai d={d}/><Process d={d} label={dictionary.common.work}/><FAQ d={d}/><FinalCTA d={d} locale={locale} slug="ecommerce"/></div>}
+import {getDictionary,type IndustryCopy,type Locale} from "@/lib/i18n";
+import {FAQ,Problems,Results} from "./IndustryBlocks";
+import {CheckoutPreview} from "./ecommerce/CheckoutPreview";
+import {DeliveryWorkflow} from "./ecommerce/DeliveryWorkflow";
+import {EcommerceAiSection} from "./ecommerce/EcommerceAiSection";
+import {EcommerceFinalCTA} from "./ecommerce/EcommerceFinalCTA";
+import {EcommerceHero} from "./ecommerce/EcommerceHero";
+import {OrderManagement} from "./ecommerce/OrderManagement";
+import {ProductDiscovery} from "./ecommerce/ProductDiscovery";
+import {PurchaseJourney} from "./ecommerce/PurchaseJourney";
+
+export function EcommercePage({d,locale}:{d:IndustryCopy;locale:Locale}){
+ const dictionary=getDictionary(locale);
+ const visual=dictionary.ecommerceVisual;
+ return <div className="industry ecommerce"><EcommerceHero d={d} visual={visual} locale={locale}/><Problems d={d} className="ecommerce-problems"/><ProductDiscovery visual={visual}/><PurchaseJourney visual={visual}/><CheckoutPreview visual={visual}/><OrderManagement visual={visual}/><EcommerceAiSection visual={visual}/><DeliveryWorkflow visual={visual}/><Results d={d} label={dictionary.common.results}/><FAQ d={d}/><EcommerceFinalCTA d={d} visual={visual} locale={locale}/></div>;
+}

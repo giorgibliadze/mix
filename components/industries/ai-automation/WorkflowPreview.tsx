@@ -1,0 +1,8 @@
+import {Bot,CheckCircle2,Database,Inbox,MailCheck,Tags,UserRoundCheck} from "lucide-react";
+import type {Dictionary} from "@/lib/i18n";
+import {AiAutomationReveal} from "./AiAutomationReveal";
+
+const icons=[Inbox,Bot,Tags,Database,UserRoundCheck,MailCheck,CheckCircle2];
+export function WorkflowPreview({visual}:{visual:Dictionary["aiAutomationVisual"]}){
+ return <AiAutomationReveal id="automation-workflow" className="ai-automation-section scroll-mt-24"><div className="rounded-[2rem] border border-[#6177e8]/20 bg-[#0b1328] p-5 sm:p-9 lg:p-12"><p className="eyebrow">{visual.workflowEyebrow}</p><div className="mt-4 grid gap-5 lg:grid-cols-[.75fr_1.25fr]"><h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">{visual.workflowTitle}</h2><p className="max-w-xl leading-8 text-[#9aa8c2] lg:justify-self-end">{visual.workflowText}</p></div><ol className="ai-workflow mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-7">{visual.workflowSteps.map((item,index)=>{const Icon=icons[index];return <li key={item} className="relative rounded-2xl border border-white/10 bg-white/4 p-4"><div className="flex items-center justify-between text-[#67d9e8]"><Icon size={19}/><b className="text-[10px] opacity-55">0{index+1}</b></div><p className="mt-6 text-xs font-semibold leading-5">{item}</p></li>})}</ol><div className="mt-6 grid gap-3 sm:grid-cols-3">{visual.workflowStates.map((item,index)=><div key={item} className="rounded-xl border border-white/10 bg-[#111c38] p-3 text-xs"><span className={index===1?"text-[#f39a72]":"text-[#776bf0]"}>{visual.workflowStateLabels[index]}</span><p className="mt-2 font-semibold">{item}</p></div>)}</div></div></AiAutomationReveal>;
+}
