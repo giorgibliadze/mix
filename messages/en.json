@@ -4,7 +4,7 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
-    "start": "Share Your Brief",
+    "start": "Discuss Your Challenge",
     "home": "Home",
     "footer": "We build websites and systems that shorten decisions, capture demand and automate routine work.",
     "contactInfo": "Contact information",
@@ -14,11 +14,22 @@
     "address": "Tbilisi, Georgia",
     "work": "Delivery process",
     "results": "Business outcomes",
+    "whyWebsite": "Why It Matters",
+    "businessBenefits": "What Business Gains",
+    "featureImpact": "Feature to Outcome",
+    "competitiveAdvantage": "Competitive Advantage",
+    "beforeAfter": "Before and After",
+    "changeTitle": "What Changes in Practice",
+    "withoutWebsite": "Without a website",
+    "withWebsite": "With a working website",
+    "nextHubApproach": "Next-Hub approach",
+    "nextHubTitle": "From Problem to Solution",
+    "nextHubText": "We study the business and customer journey first, then choose the right features, design and technical connections.",
     "without": "Without a proper platform",
     "solution": "Digital solution",
     "selectIndustry": "Find your industry",
-    "homeTitle": "Find Your Advantage",
-    "homeText": "Choose your field to see which features can generate more enquiries, sales or bookings for your business.",
+    "homeTitle": "Results-Driven Websites",
+    "homeText": "The right website makes decisions easier and helps the business manage demand, sales and time. Choose your field to see what changes.",
     "quiz": "Quick match",
     "goal": "Which outcome matters most?",
     "website": "Do you already have a website?",
@@ -28,10 +39,10 @@
     "automation": "Automation",
     "yes": "Yes",
     "no": "No",
-    "view": "Open this field",
-    "chooseField": "Browse industries",
-    "consultation": "Share your goal",
-    "industryIntro": "Each page maps the sector’s friction points, essential features and clearest route to a measurable result.",
+    "view": "See Business Impact",
+    "chooseField": "Choose Your Field",
+    "consultation": "Discuss Your Goal",
+    "industryIntro": "Every industry loses customers at a different point. Choose your field to see where decisions stall and how the right website removes that friction.",
     "readyTitle": "What should work better?",
     "readyText": "Tell us where sales, bookings or team workflows slow down. We’ll outline a focused way forward.",
     "discuss": "Plan a call"
@@ -42,16 +53,16 @@
     "back": "Return to the home page"
   },
   "contact": {
-    "title": "Start With Context",
-    "description": "Briefly describe the goal and what is getting in the way. We’ll respond with a realistic next step for your business."
+    "title": "Tell Us the Friction",
+    "description": "Tell us where enquiries, orders or team time are being lost. We’ll help identify the digital step most likely to make a practical difference."
   },
   "about": {
-    "title": "Systems That Work",
-    "description": "Next-Hub Solutions combines business logic, clear design and dependable engineering. We build systems that shorten decisions and remove manual work.",
+    "title": "We Start by Listening",
+    "description": "We first learn where customers hesitate and where the team loses time. Then we build the website or system around that specific problem.",
     "items": [
-      "Focused business analysis",
-      "Shorter customer journeys",
-      "Integration and measurement"
+      "Find the real bottleneck",
+      "Make decisions easier",
+      "Connect the right processes"
     ]
   },
   "faqPage": {
@@ -94,17 +105,17 @@
     "construction": {
       "nav": "Construction & real estate",
       "badge": "Digital sales for property developers",
-      "title": "Accelerate Property Sales",
-      "subtitle": "Let buyers compare buildings, floors and available units themselves. Give your sales team a clearer, better-qualified enquiry.",
-      "heroPrimary": "Explore Unit Selection",
-      "heroSecondary": "Plan the Showcase",
+      "title": "Simplify Property Sales",
+      "subtitle": "Buyers decide sooner because the project is clear. The sales team receives enquiries from people who already understand the details.",
+      "heroPrimary": "Present Projects Clearly",
+      "heroSecondary": "Improve Enquiry Quality",
       "cardText": "Buyers find the right unit faster, while sales teams receive better-qualified enquiries.",
       "problemsTitle": "What Delays Buyers",
       "problems": [
-        "Unit details live across different channels",
-        "Available properties are hard to find",
-        "Prices and statuses become outdated",
-        "Sales teams repeat the same answers"
+        "Buyers search through posts and files for basic details",
+        "Checking availability still requires a call",
+        "Price and status differ between channels",
+        "Sales teams answer the same questions every day"
       ],
       "solutionTitle": "From Choice to Meeting",
       "features": [
@@ -117,10 +128,10 @@
         "Multilingual presentation"
       ],
       "results": [
-        "Fewer repetitive questions",
-        "More specific enquiries",
-        "A shorter sales cycle",
-        "Stronger project credibility"
+        "Enquiries come from buyers who already reviewed the terms",
+        "Decision-making information is available at the right moment",
+        "Managers spend less time repeating basic details",
+        "Transparent information makes the project easier to trust"
       ],
       "journeyTitle": "Buyer journey",
       "journey": [
@@ -147,14 +158,14 @@
       "faq": [
         {
           "question": "Can availability update from our CRM?",
-          "answer": "Yes. Unit status and incoming leads can connect directly to your CRM."
+          "answer": "Yes. Your team updates the status once, and buyers see current availability without calling to confirm it."
         },
         {
           "question": "Can we add a 3D tour?",
-          "answer": "Yes. We can integrate 3D, 360° and video presentations."
+          "answer": "Yes. Existing 3D, 360° or video material can sit naturally within the project journey and help buyers understand the space."
         }
       ],
-      "finalCta": "Sell With Clarity",
+      "finalCta": "Present Projects Clearly",
       "description": "A developer website with unit selection, live availability, meeting booking and CRM connectivity.",
       "keywords": [
         "property developer website",
@@ -165,17 +176,17 @@
     "tourism": {
       "nav": "Tourism",
       "badge": "From inspiration to booking",
-      "title": "Win Direct Bookings",
-      "subtitle": "Let travellers choose a tour, review the full itinerary and pay on your website. Cut the messages between interest and confirmation.",
-      "heroPrimary": "See Booking Flow",
-      "heroSecondary": "Plan Tour Site",
+      "title": "Interest Becomes Bookings",
+      "subtitle": "Travellers decide without a long message thread, while the business keeps direct bookings in a channel it controls.",
+      "heroPrimary": "Increase Direct Bookings",
+      "heroSecondary": "Own Your Channel",
       "cardText": "Travellers choose an itinerary and complete the booking directly on your website.",
       "problemsTitle": "Where Bookings Disappear",
       "problems": [
-        "Tours only appear on social media",
-        "Offers are difficult to compare",
-        "Bookings are handled manually",
-        "International travellers lack clear details"
+        "Tour details disappear inside posts and messages",
+        "Travellers cannot compare offers quickly",
+        "Every booking needs manual confirmation",
+        "International guests leave when essential details are unclear"
       ],
       "solutionTitle": "From Search to Payment",
       "features": [
@@ -188,10 +199,10 @@
         "AI trip planner"
       ],
       "results": [
-        "More direct bookings",
-        "Fewer manual messages",
-        "Faster online payments",
-        "Clearer offers for global travellers"
+        "Travellers stay with your brand from interest to booking",
+        "Complete details reduce repetitive conversations",
+        "Payment completes while intent is still high",
+        "Localised offers give international guests more confidence"
       ],
       "journeyTitle": "Traveller journey",
       "journey": [
@@ -218,14 +229,14 @@
       "faq": [
         {
           "question": "Can customers pay online?",
-          "answer": "Yes. The platform can connect to local or international payment providers."
+          "answer": "Yes. The payment journey can match your market and provider, allowing customers to complete a booking in one flow."
         },
         {
           "question": "Does AI create the entire tour?",
-          "answer": "AI suggests itineraries based on your real catalogue and business rules."
+          "answer": "It only works from your real tours and rules. AI helps customers choose; it does not invent services you cannot deliver."
         }
       ],
-      "finalCta": "Own Every Booking",
+      "finalCta": "Increase Direct Bookings",
       "description": "A travel website with tours, itineraries, online booking, payments and AI-assisted planning.",
       "keywords": [
         "tour operator website",
@@ -236,17 +247,17 @@
     "ecommerce": {
       "nav": "E-commerce",
       "badge": "An always-on sales channel",
-      "title": "Keep Sales Moving",
-      "subtitle": "Help shoppers find products and finish payment quickly. Manage orders, stock and delivery from one place.",
-      "heroPrimary": "Open Your Store",
-      "heroSecondary": "See Sales Flow",
+      "title": "Simplify Online Sales",
+      "subtitle": "Customers find the right product and complete an order without unnecessary friction. Your team manages every order in one place.",
+      "heroPrimary": "Start Selling Online",
+      "heroSecondary": "Simplify Your Orders",
       "cardText": "Manage every step from product discovery to delivery in one connected store.",
       "problemsTitle": "Why Orders Stop",
       "problems": [
-        "Orders arrive through messages",
-        "Customers cannot see stock",
-        "Processing is manual",
-        "Abandoned carts never return"
+        "Orders get lost across different chats",
+        "Customers cannot tell whether an item is available",
+        "The team retypes the same order details",
+        "A difficult purchase sends customers to another store"
       ],
       "solutionTitle": "Buy Without Friction",
       "features": [
@@ -259,10 +270,10 @@
         "Sales analytics"
       ],
       "results": [
-        "Orders at any hour",
-        "Less manual processing",
-        "More repeat purchases",
-        "Clearly measured sales"
+        "Customers order outside business hours",
+        "Order details reach the team without retyping",
+        "A simple account makes repeat purchases easier",
+        "Sales data shows what customers actually choose"
       ],
       "journeyTitle": "Fast checkout",
       "journey": [
@@ -289,14 +300,14 @@
       "faq": [
         {
           "question": "Can it connect to our stock system?",
-          "answer": "Yes. We can integrate an ERP, warehouse system or another data source."
+          "answer": "Yes. Where the existing system supports it, stock updates once and the team no longer maintains two separate records."
         },
         {
           "question": "Will mobile checkout be fast?",
-          "answer": "Yes. Checkout is designed around small screens and minimal steps from the start."
+          "answer": "Yes. The mobile purchase is planned first, keeping fields and steps to the minimum customers actually need."
         }
       ],
-      "finalCta": "Stop Losing Orders",
+      "finalCta": "Start Selling Online",
       "description": "An online store with fast search, simple payment, delivery integration and actionable sales analytics.",
       "keywords": [
         "online store development",
@@ -307,17 +318,17 @@
     "healthcare": {
       "nav": "Clinics & healthcare",
       "badge": "A trusted patient experience",
-      "title": "Book Without Calls",
-      "subtitle": "Let patients choose a service, doctor and available time online. Give administrators fewer calls and a schedule they can manage.",
-      "heroPrimary": "See Booking Steps",
-      "heroSecondary": "Plan Clinic Booking",
+      "title": "Simplify Patient Booking",
+      "subtitle": "Patients find answers and available times themselves. Reception handles fewer repetitive calls and manages visits with less pressure.",
+      "heroPrimary": "Reduce Reception Calls",
+      "heroSecondary": "Simplify Patient Booking",
       "cardText": "Patients choose a doctor and time themselves, reducing calls for the clinic team.",
       "problemsTitle": "What Overloads Reception",
       "problems": [
-        "Doctor schedules are not visible online",
-        "Patients struggle to choose a specialist",
-        "Administrators handle too many calls",
-        "Reminders are sent manually"
+        "Patients must call just to check availability",
+        "Doctor differences remain unclear without useful profiles",
+        "Reception repeats the same answers throughout the day",
+        "Manual reminders take time and may arrive late"
       ],
       "solutionTitle": "Booking in Minutes",
       "features": [
@@ -330,10 +341,10 @@
         "Administrative AI assistant"
       ],
       "results": [
-        "Fewer phone calls",
-        "Fewer missed appointments",
-        "Clearer doctor selection",
-        "A manageable admin workload"
+        "Patients find common answers without calling",
+        "Timely reminders reduce forgotten appointments",
+        "Transparent profiles make doctor selection easier",
+        "Online booking leaves reception time for complex needs"
       ],
       "journeyTitle": "Patient journey",
       "journey": [
@@ -360,14 +371,14 @@
       "faq": [
         {
           "question": "Does AI diagnose patients?",
-          "answer": "No. AI is only used for administrative assistance and never replaces a doctor."
+          "answer": "No. It can find clinic information and help with booking, but every medical decision remains with a qualified doctor."
         },
         {
           "question": "Can the system send reminders?",
-          "answer": "Yes. It can send automatic SMS or email appointment reminders."
+          "answer": "Yes. Patients receive a timely text or email, while reception no longer sends every reminder by hand."
         }
       ],
-      "finalCta": "Reduce Call Volume",
+      "finalCta": "Reduce Reception Calls",
       "description": "A clinic website with doctor profiles, live schedules, online booking and responsible reminders.",
       "keywords": [
         "clinic website",
@@ -378,17 +389,17 @@
     "ai-automation": {
       "nav": "AI & business automation",
       "badge": "Connected workflows",
-      "title": "Automate Daily Work",
-      "subtitle": "Connect enquiries, CRM, email and reporting in one flow. Bring people in only where judgement is needed.",
-      "heroPrimary": "Find Automation Wins",
-      "heroSecondary": "Review Your Workflows",
+      "title": "Save Team Time",
+      "subtitle": "Repetitive work runs automatically and enquiries stop disappearing between systems. The team keeps its time for decisions that need people.",
+      "heroPrimary": "Identify Time Savings",
+      "heroSecondary": "Connect Your Processes",
       "cardText": "Routine tasks run automatically, leaving the team focused on decisions that need people.",
       "problemsTitle": "Where Team Time Goes",
       "problems": [
-        "Requests get lost across channels",
-        "Leads are routed too late",
-        "Reports are prepared manually",
-        "Internal systems remain disconnected"
+        "Enquiries disappear between chat and email",
+        "Leads reach the right person too late",
+        "One report requires several files to be combined manually",
+        "The same data is entered into multiple systems"
       ],
       "solutionTitle": "One Connected Workflow",
       "features": [
@@ -402,10 +413,10 @@
         "API integrations"
       ],
       "results": [
-        "Faster enquiry responses",
-        "Less repetitive work",
-        "No forgotten leads",
-        "Cleaner decision-ready data"
+        "Each enquiry enters the right process immediately",
+        "Repeatable steps run without constant staff involvement",
+        "Every lead has a visible owner and status",
+        "Reports bring decision-ready information together on time"
       ],
       "journeyTitle": "Automation flow",
       "journey": [
@@ -432,20 +443,87 @@
       "faq": [
         {
           "question": "What should we automate first?",
-          "answer": "Start with a frequent, rules-based and measurable process."
+          "answer": "Start with work that happens often, consumes visible time and follows clear rules. That makes the first result easier to measure."
         },
         {
           "question": "Can this integrate with our CRM?",
-          "answer": "Yes. We connect to existing systems through secure APIs."
+          "answer": "If the system offers a secure connection, data can move without retyping. We confirm access and limitations before proposing the integration."
         }
       ],
-      "finalCta": "Give Time Back",
+      "finalCta": "Save Team Time",
       "description": "AI assistants, CRM connections and automated workflows for sales, support and reporting.",
       "keywords": [
         "AI integration",
         "business automation",
         "CRM automation"
       ]
+    }
+  },
+  "industryNarrative": {
+    "construction": {
+      "whyTitle": "Sales Channel, Not Catalogue",
+      "whyText": "A professional platform turns a development into a clear choice and gives the sales team better-prepared enquiries.",
+      "whyReasons": ["Buyers find every detail in one place.", "Available and sold units remain transparent.", "International investors understand the project clearly."],
+      "benefitsTitle": "Better Qualified Enquiries",
+      "benefitsText": "When buyers review the details themselves, the sales team speaks with people who are closer to a decision.",
+      "featuresTitle": "Every Feature Drives Action",
+      "featuresText": "Interactive selection and precise information reduce uncertainty and make sending an enquiry easier.",
+      "featureResults": ["Buyers independently find the right building, floor and unit.", "Area, price and status filters shorten the search.", "Decision-making information is available before the first call.", "Photography, plans and terms stay together on one page.", "Interested buyers can schedule the next step immediately.", "Each enquiry connects to the right project and manager.", "International investors review the project in their language."],
+      "advantageTitle": "Make Selection Easier",
+      "advantageText": "A structured digital experience presents the project as a more organised, trustworthy and accessible offer.",
+      "advantages": ["Buyers get answers before moving to a competitor.", "Project quality is visible from the first screen.", "The sales team handles fewer repetitive questions."]
+    },
+    "tourism": {
+      "whyTitle": "Own Your Booking Channel",
+      "whyText": "A travel platform connects inspiration, information and booking while reducing dependence on social media.",
+      "whyReasons": ["Travellers discover tours without lengthy messages.", "International guests receive complete localised information.", "Interest moves directly into a booking journey."],
+      "benefitsTitle": "More Direct Bookings",
+      "benefitsText": "Clear itineraries and simple booking reduce manual communication and create more opportunities for a direct customer relationship.",
+      "featuresTitle": "Features Support Booking",
+      "featuresText": "Each tool helps travellers choose sooner and gives the business a more organised way to receive demand.",
+      "featureResults": ["Tours become easy to discover through categories and details.", "Travellers quickly choose the right date and destination.", "Interested guests complete booking in one place.", "Payment brings the booking journey to completion.", "Routes and important stops become visually clear.", "International customers evaluate the offer in their language.", "AI-assisted planning makes relevant tours easier to find."],
+      "advantageTitle": "Booking With Less Friction",
+      "advantageText": "Advantage comes from more than photography: fast choice, trusted information and simple booking matter.",
+      "advantages": ["Guests find answers without waiting for a message.", "Localised content builds confidence with international travellers.", "Your own platform keeps demand and brand attention with you."]
+    },
+    "ecommerce": {
+      "whyTitle": "Your Store Keeps Working",
+      "whyText": "An online store is more than product pages—it connects discovery, payment, orders and sales data.",
+      "whyReasons": ["Customers find products at any hour.", "Orders begin without waiting for an employee.", "Stock and orders move through one process."],
+      "benefitsTitle": "Sales in One System",
+      "benefitsText": "Fast checkout and a clear catalogue reduce abandoned choices and make order management easier for the team.",
+      "featuresTitle": "Every Feature Speeds Sales",
+      "featuresText": "From catalogue to analytics, each part strengthens customer decisions and business control.",
+      "featureResults": ["Products stay organised in clear categories.", "Customers find the right item with less searching.", "A decision becomes an order without unnecessary steps.", "Customers complete the purchase in the same experience.", "Order status stays clear for customers and the team.", "Repeat purchases and order history become easier.", "Sales data supports more informed business decisions."],
+      "advantageTitle": "Checkout Faster Than Competitors",
+      "advantageText": "Customers often choose the store where finding products, trusting details and paying require less effort.",
+      "advantages": ["Fast search reduces reasons to visit another store.", "Transparent price and stock simplify decisions.", "Organised orders improve the quality of service."]
+    },
+    "healthcare": {
+      "whyTitle": "Trust Starts Before Visits",
+      "whyText": "A clinic platform helps patients choose a doctor, service and time while reducing repetitive calls for reception.",
+      "whyReasons": ["Doctor experience is presented transparently.", "Patients schedule visits at a convenient time.", "International patients receive complete localised information."],
+      "benefitsTitle": "Fewer Calls, More Order",
+      "benefitsText": "Online information and booking reduce repetitive questions and give patients more control over the process.",
+      "featuresTitle": "Features Help Patients",
+      "featuresText": "Every tool supports easier choice, transparent information and a more manageable administrative workload.",
+      "featureResults": ["Patients compare specialty, experience and availability.", "Service descriptions create clearer expectations before a visit.", "Patients choose appointment times without calling.", "Available times appear in one clear schedule.", "Patients select the most convenient branch.", "Reminders reduce the chance of forgetting an appointment.", "AI handles administrative questions without replacing a doctor."],
+      "advantageTitle": "Make the Patient Journey Easier",
+      "advantageText": "Trusted information, fast booking and localised content present the clinic as a more organised choice.",
+      "advantages": ["Patients find answers outside reception hours.", "Transparent profiles create a professional first impression.", "Simple booking reduces reasons to choose another clinic."]
+    },
+    "ai-automation": {
+      "whyTitle": "Processes in One System",
+      "whyText": "AI and automation reduce repetitive work, connect systems and preserve team time for decisions that need people.",
+      "whyReasons": ["Requests are collected in an organised way.", "Less data is copied manually between systems.", "People step in when judgement is required."],
+      "benefitsTitle": "Team Time for Decisions",
+      "benefitsText": "Connected workflows speed up responses, organise leads and bring process control into one place.",
+      "featuresTitle": "Automation With Real Outcomes",
+      "featuresText": "Tools are selected for a specific process, not simply to display technology.",
+      "featureResults": ["Answers common questions and sends complex cases to a person.", "Contact details are captured in an organised format.", "Requests route by type and importance.", "Leads connect to the right record without re-typing.", "Messages send after clearly defined events.", "Text and fields are prepared for human review.", "Data becomes a concise, repeatable report.", "Existing systems collaborate through secure connections."],
+      "advantageTitle": "Operate Faster and Smarter",
+      "advantageText": "Faster responses, fewer lost requests and better process control create a practical competitive advantage.",
+      "advantages": ["Leads reach the right employee sooner.", "Teams spend less time on repetitive work.", "Connected data makes decisions easier."]
     }
   },
   "aiAutomationVisual": {
@@ -463,7 +541,7 @@
     "workflowStates": ["New enquiry received", "Unclear request reviewed", "Outcome saved to system"],
     "salesAlt": "Business manager using AI indicators for sales and marketing workflows",
     "salesEyebrow": "AI sales assistant",
-    "salesTitle": "Leads Reach Owners",
+    "salesTitle": "Route Leads Correctly",
     "salesText": "An assistant helps the team understand needs, collect contact details and organise handoff through the CRM.",
     "salesItems": ["Understand customer needs", "Collect contact details", "Score the initial lead", "Recommend a service", "Draft an offer", "Create CRM record", "Hand off to manager"],
     "salesBoundary": "A person makes the final decision",
@@ -535,14 +613,14 @@
     "services": ["Consultation", "Diagnostics", "Laboratory", "Dentistry"],
     "serviceDurations": ["Demo · 30 minutes", "Demo · 45 minutes", "Demo · 20 minutes", "Demo · 40 minutes"],
     "servicesDisclaimer": "Services and durations are interface examples only.",
-    "serviceAlt": "Clean and modern dental treatment room",
+    "serviceAlt": "Bright, well-organised dental treatment room",
     "serviceImageLabel": "Clinical environment",
     "serviceImageValue": "A clear, welcoming experience",
     "journeyEyebrow": "Booking journey",
     "journeyTitle": "Choice to Reminder",
     "journeyText": "Clear steps connect patients with the right service, doctor and time without an unnecessary call.",
     "journeySteps": ["Choose service", "Choose doctor", "Select branch", "Find a time", "Add details", "Get confirmation", "Receive reminder"],
-    "interiorAlt": "Bright reception and consultation area in a modern private clinic",
+    "interiorAlt": "Bright reception and consultation area in a private clinic",
     "interiorLabel": "Clinic experience",
     "interiorValue": "A calm space before care",
     "bookingEyebrow": "Appointment interface",
@@ -563,19 +641,19 @@
     "aiText": "AI can guide patients through clinic information and booking within clearly defined administrative boundaries.",
     "aiItems": ["Answer FAQs", "Find a service", "Route to a specialist", "Help with booking", "Share address and hours", "Remind about visits"],
     "aiBoundary": "AI does not diagnose, prescribe treatment or replace a medical professional.",
-    "branchAlt": "Main entrance of a modern medical centre",
+    "branchAlt": "Main entrance of a medical centre",
     "branchCaption": "Clear branch information",
     "trustEyebrow": "Trust and accessibility",
     "trustTitle": "Information for Decisions",
     "trustItems": ["Personal data protection", "Branches and contacts", "Localised descriptions", "Clear cancellation guidance"],
     "languages": ["KA", "EN", "RU"],
     "finalTitle": "Build Your Clinic Platform",
-    "finalText": "Let’s discuss doctor profiles, online booking and simpler administrative workflows for your clinic.",
+    "finalText": "Let’s discuss how doctor profiles and online booking can simplify patient choice and day-to-day administration.",
     "finalPrimary": "Discuss Your Platform",
     "finalSecondary": "Explore Booking"
   },
   "ecommerceVisual": {
-    "heroAlt": "Fashion product catalogue open on a laptop in a modern workspace",
+    "heroAlt": "Fashion product catalogue open on a laptop at a workspace",
     "heroTrust": ["Connected catalogue", "Simple checkout", "Order management"],
     "demoState": "Visual demo",
     "cartLabel": "Added to cart",
@@ -634,7 +712,7 @@
     "deliveryText": "Clear statuses show both the team and the customer where an order is and what happens next.",
     "deliverySteps": ["Order received", "Items packed", "Given to courier", "Tracking activated", "Customer notified", "Delivery completed"],
     "finalTitle": "Build Your Sales System",
-    "finalText": "Let’s discuss an online store, simpler checkout and order automation designed around your business.",
+    "finalText": "Let’s discuss how an online store can simplify product choice, ordering and your team’s day-to-day work.",
     "finalPrimary": "Discuss Your Store",
     "finalSecondary": "Explore Catalogue"
   },
@@ -687,7 +765,7 @@
     "paymentStep": "Secure payment step",
     "confirmation": "Booking ready for confirmation",
     "finalTitle": "Build Your Booking Platform",
-    "finalText": "Let’s shape a tour catalogue, itinerary experience and booking system designed to grow direct sales.",
+    "finalText": "Let’s discuss how a clear catalogue and simple booking can turn traveller interest into direct enquiries.",
     "finalPrimary": "Discuss Your Platform",
     "finalSecondary": "Explore Destinations"
   },
@@ -697,7 +775,7 @@
     "heroCardTitle": "Every choice in one place",
     "heroCardMeta": "Price · area · status",
     "galleryEyebrow": "Project presentation",
-    "galleryTitle": "Architecture That Sells",
+    "galleryTitle": "Refined Architecture",
     "galleryText": "Strong photography communicates a project’s scale, character and build quality before the first conversation.",
     "galleryPrimaryAlt": "Rear view of a contemporary white and glass villa",
     "galleryVillaAlt": "Architectural rendering of a dark geometric villa",
@@ -715,10 +793,10 @@
     "statusValue": "Construction underway",
     "areaRange": "Area range",
     "areaValue": "54–126 m²",
-    "showcaseEyebrow": "Premium project page",
+    "showcaseEyebrow": "Complete project page",
     "showcaseTitle": "Every Detail Together",
     "showcaseText": "Description, photography, specifications, location and enquiry form on one page help buyers decide sooner.",
-    "showcaseAlt": "Full facade of a premium contemporary villa with landscaping and a pool",
+    "showcaseAlt": "Full villa facade with landscaping and a pool",
     "showcaseItems": ["Project story", "Complete gallery", "Location and enquiry"],
     "mobileEyebrow": "Mobile experience",
     "mobileTitle": "Selection Works Anywhere",

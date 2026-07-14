@@ -58,6 +58,25 @@ body { overflow-x: hidden; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.75rem }.hero-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.6rem 1.2rem;border-radius:999px;border:1px solid rgba(255,255,255,.18);font-weight:650;outline:none;transition:transform .16s ease,background-color .16s ease}.hero-actions a:hover{transform:translateY(-1px)}.hero-actions a:first-child{background:var(--theme);border-color:var(--theme);color:#fff}
 .journey-step { display:flex; min-height:4.3rem; align-items:center; gap:.75rem; border:1px solid rgba(255,255,255,.1); border-radius:1rem; padding:.8rem 1rem; background:rgba(255,255,255,.04) }.journey-step b{color:var(--theme)}
 .ai-panel { border-radius:2rem; background:radial-gradient(circle at 80% 0%,color-mix(in srgb,var(--theme) 25%,transparent),transparent 45%); }
+.narrative-heading { margin-top:1rem; max-width:18ch; text-wrap:balance; font-size:clamp(2rem,4vw,3.25rem); line-height:1.06; letter-spacing:-.03em; font-weight:650; }
+.narrative-intro { margin-top:1.1rem; max-width:46rem; color:#9aa8bd; line-height:1.75; }
+.narrative-grid { display:grid; gap:.75rem; }
+.narrative-card { min-height:8.5rem; border:1px solid rgba(255,255,255,.1); border-radius:1.25rem; background:rgba(255,255,255,.045); padding:1.25rem; }
+.narrative-card>span { color:var(--theme); font-size:.7rem; font-weight:800; }
+.narrative-card>svg { color:var(--theme); }
+.narrative-card>p { margin-top:1rem; max-width:28rem; color:#d8e0eb; font-size:.95rem; line-height:1.55; }
+.narrative-feature { display:flex; gap:1rem; border:1px solid rgba(255,255,255,.1); border-radius:1.25rem; background:rgba(255,255,255,.045); padding:1.25rem; }
+.narrative-feature>svg { margin-top:.15rem; flex:none; color:var(--theme); }
+.narrative-feature h3 { font-size:1rem; font-weight:700; }
+.narrative-feature p { margin-top:.45rem; color:#9eabbe; font-size:.88rem; line-height:1.55; }
+.comparison-panel { border:1px solid rgba(255,255,255,.1); border-radius:1.5rem; padding:1.5rem; }
+.comparison-panel h3 { margin-bottom:1rem; font-size:1.15rem; font-weight:700; }
+.comparison-panel p { display:flex; min-height:3rem; align-items:center; gap:.6rem; border-top:1px solid rgba(255,255,255,.08); color:#b8c2d1; font-size:.9rem; line-height:1.45; }
+.comparison-before { background:rgba(255,255,255,.025); }
+.comparison-before p { opacity:.72; }
+.comparison-after { border-color:color-mix(in srgb,var(--theme) 28%,transparent); background:color-mix(in srgb,var(--theme) 9%,transparent); }
+.comparison-after svg { flex:none; color:var(--theme); }
+@media(min-width:640px){.narrative-grid{grid-template-columns:repeat(3,1fr)}}
 .construction {--theme:#c99a5b;background:#080b11}.blueprint{padding:1rem;border:1px solid #c99a5b55;background-image:linear-gradient(#c99a5b18 1px,transparent 1px),linear-gradient(90deg,#c99a5b18 1px,transparent 1px);background-size:28px 28px}.building{max-width:25rem;margin:auto;padding:2rem;background:#0d1522;border:1px solid #c99a5b55}.building span{padding:.7rem;text-align:center;border:1px solid #c99a5b44}.building .sold{opacity:.3}
 .tourism { --theme:#F13024; background:radial-gradient(circle at 82% 4%,rgba(38,166,157,.2),transparent 26rem),linear-gradient(180deg,#052d36 0%,#073640 43rem,#071d29 100%); }
 .tourism-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); scroll-margin-top:5rem; }
@@ -91,6 +110,11 @@ body { overflow-x: hidden; }
 .healthcare .industry-section .space-y-3>div { border-color:rgba(23,63,70,.1); background:white; }
 .healthcare .industry-section .space-y-3 button span { color:#17383e; }
 .healthcare .industry-section .space-y-3 p { color:#5c757a; }
+.healthcare .narrative-intro,.healthcare .narrative-feature p { color:#5c757a; }
+.healthcare .narrative-card,.healthcare .narrative-feature,.healthcare .comparison-panel { border-color:rgba(23,63,70,.1); background:white; box-shadow:0 12px 35px rgba(25,73,78,.045); }
+.healthcare .narrative-card>p { color:#294a50; }
+.healthcare .comparison-panel p { border-color:rgba(23,63,70,.09); color:#516e73; }
+.healthcare .comparison-after { border-color:rgba(22,132,116,.18); background:#e3f2ee; }
 .healthcare .hero-shell h1 { font-size:clamp(3.875rem,5vw,4.625rem); }
 .ai-automation { --theme:#F13024; background:radial-gradient(circle at 82% 4%,rgba(76,93,211,.26),transparent 29rem),linear-gradient(180deg,#050917 0%,#081126 44rem,#050a16 100%); }
 .ai-automation-section { width:min(100% - 2rem,80rem); margin-inline:auto; padding-block:clamp(3.5rem,7vw,6.5rem); scroll-margin-top:5rem; }
