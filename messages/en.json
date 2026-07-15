@@ -47,6 +47,23 @@
     "readyText": "Tell us where sales, bookings or team workflows slow down. We’ll outline a focused way forward.",
     "discuss": "Plan a call"
   },
+  "solutionsOrbit": {
+    "eyebrow": "Industry solutions",
+    "title": "Choose Your Business Path",
+    "subtitle": "Every industry has a different customer journey. Choose yours to see the business impact of the right website.",
+    "centerTitle": "Your Industry",
+    "centerText": "One clear path",
+    "cta": "Explore Solution",
+    "orbitLabel": "Rotating navigation for conversion solutions",
+    "navigationLabel": "Complete list of conversion solutions",
+    "items": {
+      "construction": {"name": "Property", "description": "Makes unit selection easier and gives sales teams better-prepared enquiries sooner at scale.", "tooltip": "From selection to informed enquiries", "ariaLabel": "Explore the property sales conversion solution"},
+      "tourism": {"name": "Tourism", "description": "Turns traveller interest into direct bookings while reducing repetitive messages for the team.", "tooltip": "From interest to direct booking", "ariaLabel": "Explore the tourism and direct booking conversion solution"},
+      "ecommerce": {"name": "Ecommerce", "description": "Simplifies product discovery and payment while keeping every order in one manageable process.", "tooltip": "From discovery to completed order", "ariaLabel": "Explore the ecommerce and order conversion solution"},
+      "healthcare": {"name": "Clinics", "description": "Helps patients choose doctors and times while reducing repetitive calls for reception.", "tooltip": "From search to simple booking", "ariaLabel": "Explore the clinic and patient booking conversion solution"},
+      "ai-automation": {"name": "AI Automation", "description": "Reduces repetitive work, organises requests and preserves team time for important decisions.", "tooltip": "From routine to connected workflow", "ariaLabel": "Explore the AI and business automation conversion solution"}
+    }
+  },
   "notFound": {
     "title": "Page not found",
     "text": "The address is incorrect or the page has moved.",
