@@ -110,7 +110,8 @@ export function InteractiveBuildingMap({copy}: {copy: FloorCopy}) {
         stroke-width:1.15!important;
         stroke-opacity:.78!important
       }
-      [data-active-floor="true"]{
+      #path5[data-active-floor="true"],#path6[data-active-floor="true"],#path7[data-active-floor="true"],
+      #path8[data-active-floor="true"],#path9[data-active-floor="true"],#path10[data-active-floor="true"]{
         fill:url(#floor-active-gradient)!important;
         stroke:#d1ccff!important;
         stroke-width:1.5!important;
